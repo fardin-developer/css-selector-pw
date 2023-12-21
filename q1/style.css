@@ -1,0 +1,65 @@
+/*   
+   B (i) : targeted all a tag using css combinator selector
+*/
+nav a {
+    color: green;
+}
+
+/*   
+   B (ii) : targeted only first h2 tag and change its color and bg color.
+*/
+nav>h2 {
+    color: rgb(74, 177, 200);
+    background-color: rgb(112, 94, 94);
+}
+
+/*   
+   B (iii) select the first p tag and change color to red
+*/
+p:nth-of-type(1) {
+    color: red;
+}
+
+
+/* c (i) */
+a[href] {
+    color: red;
+    text-decoration: none;
+}
+
+/* c (ii) */
+a[class="active"] {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* c (iii) */
+a[target="_self"] {
+    background-color: grey;
+}
+
+/* D (i) */
+p:last-of-type::after {
+    content: '...';
+}
+
+/* D (ii) */
+
+li::marker{
+    color: green;
+}
+
+/* D (iii) */
+
+p:nth-child(4)::first-letter{
+    font-size: 30px;
+    color: red;
+}
+
+p:nth-of-type(2)::first-letter {
+    font-size: 30px;
+    color: red;
+}
+  
+
+
